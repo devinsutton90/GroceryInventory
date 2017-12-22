@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Grocery Inventory</string>
+    <string name="title_activity_food_detail">FoodDetailActivity</string>
+    <string name="title_activity_location_detail">LocationDetailActivity</string>
+</resources>

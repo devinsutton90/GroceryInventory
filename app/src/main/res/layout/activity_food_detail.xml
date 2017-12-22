@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.wgu.sutton.devin.groceryinventory.activites.FoodDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/food_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="Name:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTextView"
+            android:layout_marginBottom="20sp"
+            android:text="Type:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeTextView"
+            android:layout_marginBottom="20sp"
+            android:text="Quantity:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantityTextView"
+            android:layout_marginBottom="20sp"
+            android:text="Price:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceTextView"
+            android:layout_marginBottom="20sp"
+            android:text="Location:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/expirationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationTextView"
+            android:layout_marginBottom="20sp"
+            android:text="Expiration Date:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expirationTextView"
+            android:layout_marginBottom="20sp"
+            android:text="Description:"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/typeTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/nameEditText"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Type"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/quantityTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/nameEditText"
+            android:ems="10"
+            android:hint="EA/oz"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/priceEditView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/priceTextView"
+            android:ems="10"
+            android:hint="$xx.xx"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/expirationEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/expirationTextView"
+            android:ems="10"
+            android:hint="MM/DD/YYYY"
+            android:inputType="date"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/descriptionTextView"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionEditText"
+            android:layout_toLeftOf="@+id/cancelButton"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:layout_below="@+id/descriptionEditText"
+            android:text="Cancel" />
+
+        <Spinner
+            android:id="@+id/locationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/locationTextView"
+            android:layout_alignStart="@+id/priceEditView" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

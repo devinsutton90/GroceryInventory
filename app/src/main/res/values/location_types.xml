@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_type">
+        <item>Refrigerator</item>
+        <item>Freezer</item>
+        <item>Pantry</item>
+        <item>Other</item>
+    </string-array>
+</resources>

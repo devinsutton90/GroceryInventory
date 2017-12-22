@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_food"
+        android:title="Add Food Item" />
+    <item
+        android:id="@+id/view_locations"
+        android:title="Manage Locations" />
+    <item
+        android:id="@+id/sort_location"
+        android:title="Sort By Location" />
+    <item
+        android:id="@+id/sort_type"
+        android:title="Sort By Type" />
+    <item
+    android:id="@+id/sort_date"
+    android:title="Sort By Expiration Date" />
+    <item
+        android:id="@+id/waste_report"
+        android:title="View Waste Report" />
+</menu>

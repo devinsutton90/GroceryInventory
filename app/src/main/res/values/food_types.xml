@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="food_types">
+        <item>Fruit</item>
+        <item>Vegetable</item>
+        <item>Dairy</item>
+        <item>Meat</item>
+        <item>Beverage</item>
+        <item>Leftovers</item>
+        <item>Spices</item>
+        <item>Grains</item>
+        <item>Other</item>
+    </string-array>
+</resources>
